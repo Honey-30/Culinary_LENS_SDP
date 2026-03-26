@@ -4,10 +4,18 @@ import { Package, Trash2, Calendar, Plus, AlertTriangle, ChevronRight } from 'lu
 import { PantryService } from '../services/pantryService';
 import { Ingredient } from '../types';
 import { getIngredientSuggestions } from '../services/ingredientSuggestionService';
+import { getPantryProductMeta } from '../services/pantryProductDataset';
 
 export const PantryTracker: React.FC = () => {
+  const getTodayInputDate = () => {
+    const now = new Date();
+    const local = new Date(now.getTime() - now.getTimezoneOffset() * 60000);
+    return local.toISOString().slice(0, 10);
+  };
+
   const [pantry, setPantry] = useState<Ingredient[]>([]);
   const [newItem, setNewItem] = useState('');
+  const [manualExpiry, setManualExpiry] = useState<string>('');
   const [expiringItems, setExpiringItems] = useState<Ingredient[]>([]);
   const [suggestions, setSuggestions] = useState<string[]>([]);
 
@@ -32,15 +40,13 @@ export const PantryTracker: React.FC = () => {
 
   const handleAdd = () => {
     if (!newItem.trim()) return;
-    const item: Ingredient = {
-      id: `pantry-${Date.now()}`,
-      name: newItem,
-      category: 'Pantry',
-      confidence: 1,
-      expiryDate: new Date(Date.now() + 1000 * 60 * 60 * 24 * 7).toISOString() // Default 7 days
-    };
-    PantryService.addToPantry(item);
+    const normalizedExpiry = manualExpiry
+      ? new Date(`${manualExpiry}T12:00:00`).toISOString()
+      : undefined;
+
+    PantryService.addManualItem(newItem, normalizedExpiry);
     setNewItem('');
+    setManualExpiry('');
     setSuggestions([]);
     loadPantry();
   };
@@ -61,23 +67,37 @@ export const PantryTracker: React.FC = () => {
       </header>
 
       {/* Add Item */}
-      <div className="flex gap-2">
+      <div className="grid grid-cols-1 md:grid-cols-[1fr_190px_auto] gap-2">
         <input
           type="text"
           value={newItem}
           onChange={(e) => setNewItem(e.target.value)}
           onKeyDown={(e) => e.key === 'Enter' && handleAdd()}
           placeholder="Add staple (e.g., Olive Oil, Flour)..."
-          className="flex-1 bg-zinc-900 border border-zinc-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-blue-500/50 transition-all"
+          className="bg-zinc-900 border border-zinc-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-blue-500/50 transition-all"
+        />
+        <input
+          type="date"
+          min={getTodayInputDate()}
+          value={manualExpiry}
+          onChange={(e) => setManualExpiry(e.target.value)}
+          className="bg-zinc-900 border border-zinc-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:ring-2 focus:ring-blue-500/50 transition-all"
+          title="Optional custom expiry date"
         />
         <button
           onClick={handleAdd}
-          className="bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 rounded-xl font-medium transition-all flex items-center gap-2"
+          className="bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 rounded-xl font-medium transition-all flex items-center justify-center gap-2"
         >
           <Plus className="w-5 h-5" />
           Add
         </button>
       </div>
+
+      {newItem.trim() && (
+        <p className="text-[11px] text-zinc-500 -mt-4">
+          Auto details: {getPantryProductMeta(newItem).category} • {getPantryProductMeta(newItem).storage} storage • {getPantryProductMeta(newItem).shelfLifeDays} day shelf life
+        </p>
+      )}
 
       {suggestions.length > 0 && (
         <div className="-mt-5 flex flex-wrap gap-2">
@@ -139,6 +159,9 @@ export const PantryTracker: React.FC = () => {
                     <div className="flex items-center gap-2 text-xs text-zinc-500">
                       <Calendar className="w-3 h-3" />
                       Expires: {item.expiryDate ? new Date(item.expiryDate).toLocaleDateString() : 'N/A'}
+                    </div>
+                    <div className="text-[11px] text-zinc-500 mt-1">
+                      {item.category} • {item.pantryDetails?.storage || 'PANTRY'} • {item.pantryDetails?.source || 'MANUAL'}
                     </div>
                   </div>
                 </div>

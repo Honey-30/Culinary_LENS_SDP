@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { User, Shield, Bell, LogOut, ChevronRight, Check, X, Settings, Heart, Zap, Award } from 'lucide-react';
 import { AllergyService } from '../services/allergyService';
+import { DietPreference, TasteModelService } from '../services/tasteModelService';
 import { UserProfile } from '../types';
 
 interface ProfileSettingsProps {
@@ -14,14 +15,31 @@ export const ProfileSettings: React.FC<ProfileSettingsProps> = ({ user, onLogout
   const [newAllergy, setNewAllergy] = useState('');
   const [skillLevel, setSkillLevel] = useState<'BEGINNER' | 'INTERMEDIATE' | 'ADVANCED'>('BEGINNER');
   const [notificationsEnabled, setNotificationsEnabled] = useState<boolean>(() => localStorage.getItem('CL_NOTIFICATIONS_ENABLED') !== 'false');
+  const [spicyTolerance, setSpicyTolerance] = useState(5);
+  const [dietPreference, setDietPreference] = useState<DietPreference>('ANY');
+  const [cuisinePreferences, setCuisinePreferences] = useState<string[]>(['ALL']);
+
+  const cuisineOptions = ['ALL', 'INDIAN', 'ITALIAN', 'CHINESE', 'MEXICAN', 'JAPANESE', 'THAI', 'MEDITERRANEAN', 'AMERICAN'];
 
   useEffect(() => {
     setAllergies(AllergyService.getAllergies());
+    const tasteModel = TasteModelService.getTasteModel();
+    setSpicyTolerance(tasteModel.spicyTolerance);
+    setDietPreference(tasteModel.dietPreference);
+    setCuisinePreferences(tasteModel.cuisinePreferences);
   }, []);
 
   useEffect(() => {
     localStorage.setItem('CL_NOTIFICATIONS_ENABLED', notificationsEnabled ? 'true' : 'false');
   }, [notificationsEnabled]);
+
+  useEffect(() => {
+    TasteModelService.saveTasteModel({
+      spicyTolerance,
+      dietPreference,
+      cuisinePreferences,
+    });
+  }, [spicyTolerance, dietPreference, cuisinePreferences]);
 
   const handleAddAllergy = () => {
     if (!newAllergy.trim()) return;
@@ -35,6 +53,18 @@ export const ProfileSettings: React.FC<ProfileSettingsProps> = ({ user, onLogout
     const updated = allergies.filter(a => a !== allergy);
     setAllergies(updated);
     AllergyService.setAllergies(updated);
+  };
+
+  const toggleCuisine = (cuisine: string) => {
+    if (cuisine === 'ALL') {
+      setCuisinePreferences(['ALL']);
+      return;
+    }
+
+    const withoutAll = cuisinePreferences.filter((item) => item !== 'ALL');
+    const exists = withoutAll.includes(cuisine);
+    const next = exists ? withoutAll.filter((item) => item !== cuisine) : [...withoutAll, cuisine];
+    setCuisinePreferences(next.length ? next : ['ALL']);
   };
 
   return (
@@ -124,6 +154,77 @@ export const ProfileSettings: React.FC<ProfileSettingsProps> = ({ user, onLogout
               </motion.div>
             ))}
           </AnimatePresence>
+        </div>
+      </section>
+
+      {/* Personalized Cooking Brain */}
+      <section className="space-y-4">
+        <h2 className="text-lg font-semibold text-zinc-300 flex items-center gap-2">
+          <Heart className="w-5 h-5 text-pink-500" />
+          Personalized Cooking Brain
+        </h2>
+
+        <div className="bg-zinc-900 border border-zinc-800 rounded-2xl p-4 space-y-4">
+          <div className="space-y-2">
+            <div className="flex items-center justify-between">
+              <label className="text-xs text-zinc-400 uppercase tracking-wider">Spicy tolerance</label>
+              <span className="text-sm text-amber-400 font-semibold">{spicyTolerance}/10</span>
+            </div>
+            <input
+              type="range"
+              min={0}
+              max={10}
+              value={spicyTolerance}
+              onChange={(e) => setSpicyTolerance(Number(e.target.value))}
+              className="w-full accent-amber-500"
+            />
+          </div>
+
+          <div className="space-y-2">
+            <label className="text-xs text-zinc-400 uppercase tracking-wider">Diet mode</label>
+            <div className="grid grid-cols-2 gap-2">
+              {([
+                { id: 'ANY', label: 'Any' },
+                { id: 'VEG', label: 'Vegetarian' },
+                { id: 'HIGH_PROTEIN', label: 'High Protein' },
+                { id: 'LOW_CARB', label: 'Low Carb' },
+              ] as const).map((option) => (
+                <button
+                  key={option.id}
+                  onClick={() => setDietPreference(option.id)}
+                  className={`px-3 py-2 rounded-xl text-xs font-semibold border transition-all ${
+                    dietPreference === option.id
+                      ? 'border-blue-500 text-blue-300 bg-blue-500/10'
+                      : 'border-zinc-700 text-zinc-400 hover:border-zinc-600'
+                  }`}
+                >
+                  {option.label}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <div className="space-y-2">
+            <label className="text-xs text-zinc-400 uppercase tracking-wider">Cuisine preference</label>
+            <div className="flex flex-wrap gap-2">
+              {cuisineOptions.map((cuisine) => {
+                const active = cuisinePreferences.includes(cuisine);
+                return (
+                  <button
+                    key={cuisine}
+                    onClick={() => toggleCuisine(cuisine)}
+                    className={`px-3 py-1.5 rounded-full text-xs font-semibold border transition-all ${
+                      active
+                        ? 'border-emerald-500 text-emerald-300 bg-emerald-500/10'
+                        : 'border-zinc-700 text-zinc-400 hover:border-zinc-600'
+                    }`}
+                  >
+                    {cuisine}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
         </div>
       </section>
 

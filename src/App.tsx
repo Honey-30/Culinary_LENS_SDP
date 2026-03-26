@@ -82,6 +82,7 @@ import { ScanResultService } from './services/scanResultService';
 import { LocalSavedRecipeService } from './services/localSavedRecipeService';
 import { INGREDIENT_DICTIONARY } from './services/ingredientSuggestionService';
 import { IngredientPresetService, IngredientPreset } from './services/ingredientPresetService';
+import { InstantRecipeSuggestionService } from './services/instantRecipeSuggestionService';
 
 const FALLBACK_RECIPE_IMAGE = 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000';
 const OFFLINE_RECIPES = [...STATIC_RECIPES, ...LARGE_RECIPE_DATABASE];
@@ -170,6 +171,12 @@ const STATIC_SUBSTITUTIONS: Record<string, string[]> = {
 // --- Main App ---
 
 export default function App() {
+  const getTodayInputDate = () => {
+    const now = new Date();
+    const local = new Date(now.getTime() - now.getTimezoneOffset() * 60000);
+    return local.toISOString().slice(0, 10);
+  };
+
   // State
   const [workflow, setWorkflow] = useState<WorkflowState>('LANDING');
   const [user, setUser] = useState<User | null>(null);
@@ -191,6 +198,11 @@ export default function App() {
   const [validationStatus, setValidationStatus] = useState<'idle' | 'success' | 'error'>('idle');
   const [servingsScale, setServingsScale] = useState(1);
   const [scanResults, setScanResults] = useState<ScanResult[]>([]);
+  const [recipeEntryWorkflow, setRecipeEntryWorkflow] = useState<'LANDING' | 'INGREDIENT_LIST'>('INGREDIENT_LIST');
+  const [mealPlanDialogOpen, setMealPlanDialogOpen] = useState(false);
+  const [mealPlanRecipe, setMealPlanRecipe] = useState<Recipe | null>(null);
+  const [mealPlanDate, setMealPlanDate] = useState<string>(() => getTodayInputDate());
+  const [mealPlanType, setMealPlanType] = useState<MealPlanEntry['type']>('DINNER');
 
   const handleRecipeImageError = (event: React.SyntheticEvent<HTMLImageElement, Event>) => {
     const img = event.currentTarget;
@@ -309,7 +321,7 @@ export default function App() {
     }
   };
 
-  const addToMealPlan = async (recipe: Recipe, date: string, mealType: any) => {
+  const addToMealPlan = async (recipe: Recipe, date: string, mealType: MealPlanEntry['type']) => {
     const entry: MealPlanEntry = {
       id: `meal-${Date.now()}`,
       recipeId: recipe.id,
@@ -325,6 +337,20 @@ export default function App() {
       console.error('Failed to add to meal plan:', err);
       setError("Failed to add to meal plan.");
     }
+  };
+
+  const openMealPlanDialog = (recipe: Recipe) => {
+    setMealPlanRecipe(recipe);
+    setMealPlanDate(getTodayInputDate());
+    setMealPlanType('DINNER');
+    setMealPlanDialogOpen(true);
+  };
+
+  const confirmAddToMealPlan = async () => {
+    if (!mealPlanRecipe) return;
+    await addToMealPlan(mealPlanRecipe, mealPlanDate, mealPlanType);
+    setMealPlanDialogOpen(false);
+    setMealPlanRecipe(null);
   };
 
   const handleCapture = async () => {
@@ -367,6 +393,7 @@ export default function App() {
         setWorkflow('CAMERA_SCAN');
       } else {
         setIngredients(detected);
+        PantryService.addDetectedIngredients(detected);
         const stored = ScanResultService.saveScanResult(imageDataUrl ?? capturedImage, detected);
         setScanResults((prev) => [stored, ...prev].slice(0, 50));
         setWorkflow('PERCEPTION_MAP');
@@ -380,6 +407,7 @@ export default function App() {
   };
 
   const startSynthesis = async () => {
+    setRecipeEntryWorkflow('INGREDIENT_LIST');
     setWorkflow('PROCESSING');
     setIsProcessing(true);
     try {
@@ -393,6 +421,36 @@ export default function App() {
     } finally {
       setIsProcessing(false);
     }
+  };
+
+  const runInstantQuickCook = () => {
+    const suggestions = InstantRecipeSuggestionService.suggestFromPantryAndHistory(scanResults, 3);
+
+    if (!suggestions.length) {
+      setError('No instant matches yet. Add pantry items or run one scan first.');
+      setWorkflow('OFFLINE_MANUAL');
+      return;
+    }
+
+    const pantryIngredients = PantryService.getPantry();
+    const historicalNames = scanResults
+      .slice(0, 5)
+      .flatMap((scan) => scan.ingredients.map((ingredient) => ingredient.name));
+    const uniqueNames = Array.from(new Set([...pantryIngredients.map((item) => item.name), ...historicalNames]));
+
+    setIngredients(
+      uniqueNames.map((name, index) => ({
+        id: `instant-${index}`,
+        name,
+        category: 'INSTANT',
+        confidence: 0.9,
+      }))
+    );
+
+    setRecipes(suggestions.map((item) => item.recipe));
+    setNutritionalGoal('BALANCED');
+    setRecipeEntryWorkflow('LANDING');
+    setWorkflow('RECIPE_SELECTOR');
   };
 
   const saveRecipe = async (recipe: Recipe) => {
@@ -494,6 +552,9 @@ export default function App() {
         </div>
 
         <div className="grid grid-cols-1 gap-4">
+          <Button onClick={runInstantQuickCook} className="w-full py-6 text-lg" variant="outline">
+            <Zap className="mr-2 w-5 h-5" /> What Can I Cook RIGHT NOW?
+          </Button>
           <Button onClick={() => setWorkflow('CAMERA_SCAN')} className="w-full py-6 text-lg" variant="primary">
             <Camera className="mr-2 w-5 h-5" /> Start Scanning
           </Button>
@@ -1102,7 +1163,7 @@ export default function App() {
     <div className="min-h-screen bg-zinc-50 p-6">
       <div className="max-w-md mx-auto space-y-8">
         <div className="flex justify-between items-center">
-          <Button onClick={() => setWorkflow('INGREDIENT_LIST')} variant="ghost" size="icon">
+          <Button onClick={() => setWorkflow(recipeEntryWorkflow)} variant="ghost" size="icon">
             <ArrowLeft className="w-6 h-6" />
           </Button>
           <h2 className="text-xl font-bold">Recipe Intelligence</h2>
@@ -1170,7 +1231,7 @@ export default function App() {
                       <span>{recipe.macros.calories} KCAL</span>
                     </div>
                     <div className="flex gap-2">
-                      <Button variant="ghost" size="icon" onClick={() => addToMealPlan(recipe, new Date().toISOString().split('T')[0], 'DINNER')}>
+                      <Button variant="ghost" size="icon" onClick={() => openMealPlanDialog(recipe)}>
                         <LayoutGrid className="w-4 h-4 text-zinc-400" />
                       </Button>
                       <Button variant="ghost" size="icon" onClick={() => saveRecipe(recipe)}>
@@ -1720,6 +1781,75 @@ export default function App() {
         {workflow === 'MEAL_PLANNER' && <MealPlanner key="planner" userId={user?.uid || ''} />}
         {workflow === 'PROFILE_SETTINGS' && <ProfileSettings key="profile" user={user as any} onLogout={handleLogout} />}
         {workflow === 'SHOPPING_LIST' && <ShoppingList key="shopping-list" user={user} />}
+      </AnimatePresence>
+
+      <AnimatePresence>
+        {mealPlanDialogOpen && mealPlanRecipe && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-[60] bg-black/40 backdrop-blur-sm p-4 flex items-center justify-center"
+          >
+            <motion.div
+              initial={{ opacity: 0, y: 16, scale: 0.98 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              exit={{ opacity: 0, y: 12, scale: 0.98 }}
+              className="w-full max-w-md"
+            >
+              <Card className="space-y-5">
+                <div className="flex items-start justify-between gap-4">
+                  <div>
+                    <h3 className="text-lg font-bold text-zinc-900">Plan This Recipe</h3>
+                    <p className="text-sm text-zinc-500 line-clamp-1">{mealPlanRecipe.title}</p>
+                  </div>
+                  <Button variant="ghost" size="icon" onClick={() => setMealPlanDialogOpen(false)}>
+                    <X className="w-4 h-4" />
+                  </Button>
+                </div>
+
+                <div className="space-y-2">
+                  <label className="text-[10px] font-bold text-zinc-400 uppercase tracking-wider">Day</label>
+                  <input
+                    type="date"
+                    value={mealPlanDate}
+                    onChange={(event) => setMealPlanDate(event.target.value)}
+                    className="w-full bg-zinc-50 border border-zinc-200 rounded-2xl px-4 py-3 text-sm text-zinc-900"
+                  />
+                </div>
+
+                <div className="space-y-2">
+                  <label className="text-[10px] font-bold text-zinc-400 uppercase tracking-wider">Meal</label>
+                  <div className="grid grid-cols-2 gap-2">
+                    {(['BREAKFAST', 'LUNCH', 'DINNER', 'SNACK'] as MealPlanEntry['type'][]).map((type) => (
+                      <button
+                        key={type}
+                        onClick={() => setMealPlanType(type)}
+                        className={cn(
+                          'px-3 py-2 rounded-xl border text-xs font-bold tracking-wide transition-all',
+                          mealPlanType === type
+                            ? 'bg-black text-white border-black'
+                            : 'bg-white text-zinc-500 border-zinc-200 hover:border-zinc-400'
+                        )}
+                      >
+                        {type}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-2 gap-2">
+                  <Button variant="secondary" className="w-full" onClick={() => setMealPlanDialogOpen(false)}>
+                    Cancel
+                  </Button>
+                  <Button className="w-full" onClick={confirmAddToMealPlan}>
+                    Add To Planner
+                  </Button>
+                </div>
+              </Card>
+            </motion.div>
+          </motion.div>
+        )}
       </AnimatePresence>
 
       {/* Bottom Navigation */}

@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { ShoppingListService } from '../services/shoppingListService';
+import { InstamartService } from '../services/instamartService';
 import { ShoppingListItem } from '../types';
 import { User } from 'firebase/auth';
-import { Check, PlusCircle, Trash2 } from 'lucide-react';
+import { Check, PlusCircle, Trash2, ShoppingBag } from 'lucide-react';
 import { getIngredientSuggestions } from '../services/ingredientSuggestionService';
 
 interface ShoppingListProps {
@@ -52,6 +53,17 @@ export const ShoppingList: React.FC<ShoppingListProps> = ({ user }) => {
 
     const handleToggleItem = async (item: ShoppingListItem) => {
         await ShoppingListService.updateShoppingListItem(userId, item.id, { isChecked: !item.isChecked });
+        fetchItems();
+    };
+
+    const handleBuyItem = async (item: ShoppingListItem) => {
+        // Mark item as checked/purchased first
+        await ShoppingListService.updateShoppingListItem(userId, item.id, { isChecked: true });
+        
+        // Open Instamart with the product
+        InstamartService.openInstamart(item.name);
+        
+        // Refresh list to show updated state
         fetchItems();
     };
     
@@ -109,6 +121,15 @@ export const ShoppingList: React.FC<ShoppingListProps> = ({ user }) => {
                                     </button>
                                     <span className={`flex-grow ${item.isChecked ? 'line-through text-gray-500' : 'text-gray-700'}`}>{item.name}</span>
                                     <span className="text-sm text-gray-400">{item.quantity} {item.unit}</span>
+                                    {!item.isChecked && (
+                                        <button 
+                                            onClick={() => handleBuyItem(item)}
+                                            className="flex-shrink-0 p-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors flex items-center gap-1"
+                                            title="Buy on Instamart"
+                                        >
+                                            <ShoppingBag size={18} />
+                                        </button>
+                                    )}
                                 </li>
                             ))}
                         </ul>

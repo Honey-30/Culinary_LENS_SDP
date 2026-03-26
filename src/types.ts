@@ -20,6 +20,11 @@ export interface Ingredient {
   y?: number; // 0-100 normalized coordinate
   expiryDate?: string; // ISO date string
   isAllergen?: boolean;
+  pantryDetails?: {
+    storage: 'PANTRY' | 'FRIDGE' | 'FREEZER';
+    shelfLifeDays: number;
+    source: 'SCAN' | 'MANUAL';
+  };
 }
 
 export interface RecipeStep {
