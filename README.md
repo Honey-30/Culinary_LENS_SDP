@@ -2,6 +2,19 @@
 
 AI-powered cooking assistant for ingredient recognition, offline-first recipe discovery, pantry intelligence, meal planning, and guided cooking.
 
+## Latest Updates (March 2026)
+
+- Updated image URLs in static recipe data to working links for reliable recipe thumbnails.
+- Upgraded premium UI styling for Shopping List, Saved Recipes, Profile, Pantry, and Cooking Timer experiences.
+- Added quantity + unit entry in Shopping List instead of fixed default values.
+- Added broader back-navigation coverage across workflow pages.
+- Improved Cooking Mode with smarter per-step timer extraction and optional auto-next behavior.
+- Improved "What Can I Cook RIGHT NOW?" matching and ranking quality using stronger ingredient normalization.
+- Added Gemini image generation support when API key is available, with safe static-image fallback when unavailable.
+- Improved ingredient perception robustness by tuning detection recovery and confidence thresholds.
+- Added pantry synchronization updates after cooking completion and tiny last-cooked activity context in pantry view.
+- Added per-product count display support (`xN`) for ingredients and pantry items where quantity metadata is available.
+
 ## What This Project Is
 
 Culinary Lens is an **AI-powered cooking companion** that uses advanced vision, conversational AI, and personalized intelligence to transform how people cook.

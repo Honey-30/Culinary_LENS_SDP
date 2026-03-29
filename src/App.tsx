@@ -83,6 +83,7 @@ import { LocalSavedRecipeService } from './services/localSavedRecipeService';
 import { INGREDIENT_DICTIONARY } from './services/ingredientSuggestionService';
 import { IngredientPresetService, IngredientPreset } from './services/ingredientPresetService';
 import { InstantRecipeSuggestionService } from './services/instantRecipeSuggestionService';
+import { InstamartService } from './services/instamartService';
 
 const FALLBACK_RECIPE_IMAGE = 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000';
 const OFFLINE_RECIPES = [...STATIC_RECIPES, ...LARGE_RECIPE_DATABASE];
@@ -168,6 +169,81 @@ const STATIC_SUBSTITUTIONS: Record<string, string[]> = {
   'beef': ['mushrooms', 'lentils', 'black beans'],
 };
 
+const normalizeIngredientName = (value: string) =>
+  value
+    .toLowerCase()
+    .replace(/[^a-z0-9\s-]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+
+const hasIngredientMatch = (target: string, availableNames: string[]) => {
+  const normalizedTarget = normalizeIngredientName(target);
+  return availableNames.some((name) =>
+    name.includes(normalizedTarget) || normalizedTarget.includes(name)
+  );
+};
+
+const parseStepDurationFromInstruction = (instruction: string): number | undefined => {
+  if (!instruction) return undefined;
+  const text = instruction.toLowerCase();
+
+  const rangePattern = /(\d+)\s*(?:-|to|–)\s*(\d+)\s*(hours?|hrs?|hr|minutes?|mins?|min|seconds?|secs?|sec)\b/;
+  const rangeMatch = text.match(rangePattern);
+  if (rangeMatch) {
+    const upper = Number(rangeMatch[2]);
+    const unit = rangeMatch[3];
+    if (unit.startsWith('hour') || unit.startsWith('hr')) return upper * 3600;
+    if (unit.startsWith('min')) return upper * 60;
+    return upper;
+  }
+
+  const hourMatch = text.match(/(\d+)\s*(hours?|hrs?|hr)\b/);
+  const minuteMatch = text.match(/(\d+)\s*(minutes?|mins?|min)\b/);
+  const secondMatch = text.match(/(\d+)\s*(seconds?|secs?|sec)\b/);
+
+  const hours = hourMatch ? Number(hourMatch[1]) : 0;
+  const minutes = minuteMatch ? Number(minuteMatch[1]) : 0;
+  const seconds = secondMatch ? Number(secondMatch[1]) : 0;
+
+  const total = hours * 3600 + minutes * 60 + seconds;
+  if (total > 0) return total;
+
+  const compactMinutes = text.match(/\b(\d+)\s*m\b/);
+  if (compactMinutes) {
+    const value = Number(compactMinutes[1]);
+    return value > 0 ? value * 60 : undefined;
+  }
+
+  return undefined;
+};
+
+const resolveStepDuration = (instruction: string, explicitDuration?: number): { duration?: number; source: 'recipe' | 'detected' | 'recipe-normalized' | 'none' } => {
+  const detectedDuration = parseStepDurationFromInstruction(instruction);
+
+  if (typeof explicitDuration !== 'number' || explicitDuration <= 0) {
+    return detectedDuration ? { duration: detectedDuration, source: 'detected' } : { source: 'none' };
+  }
+
+  if (detectedDuration && explicitDuration < detectedDuration) {
+    return { duration: detectedDuration, source: 'recipe-normalized' };
+  }
+
+  return { duration: explicitDuration, source: 'recipe' };
+};
+
+const formatDurationLabel = (totalSeconds: number): string => {
+  const hours = Math.floor(totalSeconds / 3600);
+  const minutes = Math.floor((totalSeconds % 3600) / 60);
+  const seconds = totalSeconds % 60;
+
+  const parts: string[] = [];
+  if (hours) parts.push(`${hours}h`);
+  if (minutes) parts.push(`${minutes}m`);
+  if (seconds && hours === 0) parts.push(`${seconds}s`);
+
+  return parts.join(' ') || '0s';
+};
+
 // --- Main App ---
 
 export default function App() {
@@ -179,6 +255,7 @@ export default function App() {
 
   // State
   const [workflow, setWorkflow] = useState<WorkflowState>('LANDING');
+  const [workflowHistory, setWorkflowHistory] = useState<WorkflowState[]>([]);
   const [user, setUser] = useState<User | null>(null);
   const [apiKey, setApiKey] = useState<string>(() => localStorage.getItem('GEMINI_API_KEY') || process.env.GEMINI_API_KEY || '');
   const [ingredients, setIngredients] = useState<Ingredient[]>([]);
@@ -213,6 +290,8 @@ export default function App() {
   // Refs
   const videoRef = useRef<HTMLVideoElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const previousWorkflowRef = useRef<WorkflowState>('LANDING');
+  const isGoingBackRef = useRef(false);
 
   // Services
   const visionEngine = React.useMemo(() => new VisionEngine(apiKey), [apiKey]);
@@ -233,6 +312,25 @@ export default function App() {
     setScanResults(ScanResultService.getScanResults());
     setLocalSavedRecipes(LocalSavedRecipeService.getSavedRecipes());
   }, []);
+
+  useEffect(() => {
+    const previous = previousWorkflowRef.current;
+
+    if (previous === workflow) return;
+
+    if (isGoingBackRef.current) {
+      isGoingBackRef.current = false;
+      previousWorkflowRef.current = workflow;
+      return;
+    }
+
+    setWorkflowHistory((history) => {
+      const next = [...history, previous];
+      return next.length > 40 ? next.slice(next.length - 40) : next;
+    });
+
+    previousWorkflowRef.current = workflow;
+  }, [workflow]);
 
   useEffect(() => {
     let unsubSavedRecipes: (() => void) | null = null;
@@ -276,6 +374,18 @@ export default function App() {
   const handleLogout = async () => {
     await StorageService.logout();
     setWorkflow('LANDING');
+  };
+
+  const handleGoBack = () => {
+    setWorkflowHistory((history) => {
+      if (history.length === 0) return history;
+
+      const next = [...history];
+      const previous = next.pop()!;
+      isGoingBackRef.current = true;
+      setWorkflow(previous);
+      return next;
+    });
   };
 
   const validateApiKey = async (key: string) => {
@@ -424,7 +534,7 @@ export default function App() {
   };
 
   const runInstantQuickCook = () => {
-    const suggestions = InstantRecipeSuggestionService.suggestFromPantryAndHistory(scanResults, 3);
+    const suggestions = InstantRecipeSuggestionService.suggestFromPantryAndHistory(scanResults, 3, ingredients);
 
     if (!suggestions.length) {
       setError('No instant matches yet. Add pantry items or run one scan first.');
@@ -787,7 +897,10 @@ export default function App() {
     </div>
   );
 
-  const PerceptionMapPage = () => (
+  const PerceptionMapPage = () => {
+    const pantrySourceCounts = PantryService.getSourceCounts();
+
+    return (
     <div className="min-h-screen bg-zinc-50 p-6">
       <div className="max-w-md mx-auto space-y-6">
         <div className="flex justify-between items-center">
@@ -876,6 +989,20 @@ export default function App() {
             <h3 className="text-xs font-bold text-zinc-400 uppercase tracking-widest">Detected Entities</h3>
             <span className="text-[10px] font-bold bg-zinc-200 text-zinc-600 px-2 py-0.5 rounded-full uppercase">{ingredients.length} Found</span>
           </div>
+          <div className="grid grid-cols-3 gap-2 text-center">
+            <div className="bg-white border border-zinc-100 rounded-xl p-2">
+              <p className="text-[10px] text-zinc-400 uppercase tracking-wider font-bold">Detected</p>
+              <p className="text-sm font-bold text-zinc-900">{ingredients.length}</p>
+            </div>
+            <div className="bg-blue-50 border border-blue-100 rounded-xl p-2">
+              <p className="text-[10px] text-blue-500 uppercase tracking-wider font-bold">Pantry Total</p>
+              <p className="text-sm font-bold text-blue-900">{pantrySourceCounts.total}</p>
+            </div>
+            <div className="bg-emerald-50 border border-emerald-100 rounded-xl p-2">
+              <p className="text-[10px] text-emerald-500 uppercase tracking-wider font-bold">Scanned</p>
+              <p className="text-sm font-bold text-emerald-900">{pantrySourceCounts.scanned}</p>
+            </div>
+          </div>
           <div className="grid grid-cols-1 gap-3 max-h-[300px] overflow-y-auto pr-2 custom-scrollbar">
             {ingredients.map(ing => (
               <motion.div
@@ -915,6 +1042,7 @@ export default function App() {
       </div>
     </div>
   );
+  };
 
   const IngredientListPage = () => {
     const [substitutions, setSubstitutions] = useState<Record<string, string[]>>({});
@@ -1258,6 +1386,12 @@ export default function App() {
   );
 
   const RecipeDetailPage = () => {
+    const [boughtMissingIngredients, setBoughtMissingIngredients] = useState<string[]>([]);
+
+    useEffect(() => {
+      setBoughtMissingIngredients([]);
+    }, [selectedRecipe?.id]);
+
     if (!selectedRecipe) return null;
     
     const macroData = [
@@ -1271,6 +1405,17 @@ export default function App() {
     const scaledProtein = Math.round(selectedRecipe.macros.protein * scaleFactor);
     const scaledCarbs = Math.round(selectedRecipe.macros.carbs * scaleFactor);
     const scaledFat = Math.round(selectedRecipe.macros.fat * scaleFactor);
+
+    const availableIngredientNames = Array.from(
+      new Set([
+        ...ingredients.map((item) => normalizeIngredientName(item.name)),
+        ...PantryService.getPantry().map((item) => normalizeIngredientName(item.name)),
+      ])
+    );
+
+    const missingIngredients = selectedRecipe.ingredients.filter(
+      (ing) => !hasIngredientMatch(ing, availableIngredientNames)
+    );
 
     return (
       <div className="min-h-screen bg-white pb-24">
@@ -1366,14 +1511,54 @@ export default function App() {
                 <div key={i} className="flex items-center justify-between p-3 bg-zinc-50 rounded-2xl border border-zinc-100">
                   <span className="text-sm font-medium text-zinc-700">{ing}</span>
                   <div className="flex items-center gap-2">
+                    {hasIngredientMatch(ing, availableIngredientNames) ? (
+                      <Badge variant="success" className="text-[8px] px-1.5 py-0">In Stock</Badge>
+                    ) : (
+                      <Badge variant="warning" className="text-[8px] px-1.5 py-0">Missing</Badge>
+                    )}
                     {STATIC_SUBSTITUTIONS[ing.toLowerCase()] && (
                       <Badge variant="info" className="text-[8px] px-1.5 py-0">Swap Available</Badge>
                     )}
-                    <CheckCircle2 className="w-4 h-4 text-emerald-500" />
+                    {hasIngredientMatch(ing, availableIngredientNames) ? (
+                      <CheckCircle2 className="w-4 h-4 text-emerald-500" />
+                    ) : (
+                      <AlertCircle className="w-4 h-4 text-amber-500" />
+                    )}
                   </div>
                 </div>
               ))}
             </div>
+
+            {missingIngredients.length > 0 && (
+              <div className="pt-2 space-y-2">
+                <h4 className="text-xs font-bold text-zinc-500 uppercase tracking-wider">Missing Ingredients (Tap To Buy)</h4>
+                {missingIngredients.map((ingredient) => (
+                  (() => {
+                    const isBought = boughtMissingIngredients.includes(ingredient);
+                    return (
+                  <button
+                    key={`missing-${ingredient}`}
+                    onClick={() => {
+                      InstamartService.openInstamart(ingredient);
+                      setBoughtMissingIngredients((prev) => (prev.includes(ingredient) ? prev : [...prev, ingredient]));
+                    }}
+                    className={cn(
+                      "w-full flex items-center justify-between p-3 rounded-2xl border transition-colors text-left",
+                      isBought
+                        ? "bg-emerald-50 border-emerald-100 hover:bg-emerald-100"
+                        : "bg-amber-50 border-amber-100 hover:bg-amber-100"
+                    )}
+                  >
+                    <span className={cn("text-sm font-medium", isBought ? "text-emerald-900" : "text-amber-900")}>{ingredient}</span>
+                    <span className={cn("text-[10px] font-bold uppercase tracking-wider", isBought ? "text-emerald-700" : "text-amber-700")}>
+                      {isBought ? 'Bought' : 'Buy'}
+                    </span>
+                  </button>
+                    );
+                  })()
+                ))}
+              </div>
+            )}
           </div>
 
           <Button 
@@ -1394,10 +1579,23 @@ export default function App() {
     if (!selectedRecipe) return null;
     const currentStep = selectedRecipe.steps[currentStepIndex];
     const progress = ((currentStepIndex + 1) / selectedRecipe.steps.length) * 100;
+    const [autoAdvanceTimer, setAutoAdvanceTimer] = useState(true);
+    const resolvedStepDuration = resolveStepDuration(currentStep.instruction, currentStep.duration);
+    const stepDuration = resolvedStepDuration.duration;
+    const hasTimer = !!stepDuration && stepDuration > 0;
 
     useEffect(() => {
       speak(currentStep.instruction);
     }, [currentStepIndex]);
+
+    const handleTimerComplete = () => {
+      speak("Time is up.");
+
+      if (autoAdvanceTimer && currentStepIndex < selectedRecipe.steps.length - 1) {
+        speak("Moving to the next step.");
+        setCurrentStepIndex(currentStepIndex + 1);
+      }
+    };
 
     return (
       <div className="min-h-screen bg-white flex flex-col">
@@ -1438,9 +1636,37 @@ export default function App() {
                 {currentStep.instruction}
               </h2>
               
-              {currentStep.duration && (
-                <div className="max-w-sm mx-auto">
-                  <CookingTimer duration={currentStep.duration} onComplete={() => speak("Timer finished. Moving to next step.")} />
+              {hasTimer && stepDuration && (
+                <div className="max-w-md mx-auto space-y-3">
+                  <div className="flex flex-wrap items-center justify-center gap-2">
+                    <Badge variant="info">Smart Timer: {formatDurationLabel(stepDuration)}</Badge>
+                    {resolvedStepDuration.source === 'recipe' ? (
+                      <Badge variant="default">Recipe Defined</Badge>
+                    ) : resolvedStepDuration.source === 'recipe-normalized' ? (
+                      <Badge variant="warning">Normalized To Instruction</Badge>
+                    ) : (
+                      <Badge variant="warning">Detected From Instruction</Badge>
+                    )}
+                  </div>
+
+                  <CookingTimer
+                    duration={stepDuration}
+                    autoStart={true}
+                    label="Step Timer"
+                    onComplete={handleTimerComplete}
+                  />
+
+                  <button
+                    onClick={() => setAutoAdvanceTimer((prev) => !prev)}
+                    className={cn(
+                      "mx-auto text-xs font-semibold px-3 py-1.5 rounded-full border transition-colors",
+                      autoAdvanceTimer
+                        ? "bg-emerald-50 border-emerald-200 text-emerald-700"
+                        : "bg-zinc-50 border-zinc-200 text-zinc-600"
+                    )}
+                  >
+                    Auto move to next step: {autoAdvanceTimer ? 'On' : 'Off'}
+                  </button>
                 </div>
               )}
 
@@ -1467,7 +1693,11 @@ export default function App() {
             <Button 
               variant="primary" 
               className="py-6 bg-green-600 hover:bg-green-700"
-              onClick={() => setWorkflow('POST_COMPLETION')}
+              onClick={() => {
+                const consumedCount = PantryService.consumeIngredientsByNames(selectedRecipe.ingredients);
+                PantryService.recordLastCookActivity(selectedRecipe.title, consumedCount);
+                setWorkflow('POST_COMPLETION');
+              }}
             >
               Complete <CheckCircle2 className="ml-2 w-5 h-5" />
             </Button>
@@ -1534,56 +1764,96 @@ export default function App() {
     </div>
   );
 
-  const SavedRecipesPage = () => (
-    <div className="min-h-screen bg-white p-6">
-      <div className="max-w-md mx-auto space-y-8">
-        <div className="flex justify-between items-center">
-          <Button onClick={() => setWorkflow('LANDING')} variant="ghost" size="icon">
-            <ArrowLeft className="w-6 h-6" />
-          </Button>
-          <h2 className="text-xl font-bold">Saved Recipes</h2>
-          <div className="w-10" />
-        </div>
+  const SavedRecipesPage = () => {
+    const cuisineCount = new Set(visibleSavedRecipes.map((recipe) => recipe.cuisine)).size;
+    const featuredCuisines = Array.from(new Set(visibleSavedRecipes.map((recipe) => recipe.cuisine))).slice(0, 3);
 
-        {visibleSavedRecipes.length === 0 ? (
-          <div className="flex flex-col items-center justify-center py-20 text-center space-y-4">
-            <div className="w-20 h-20 bg-zinc-50 rounded-[2rem] flex items-center justify-center">
-              <History className="w-10 h-10 text-zinc-200" />
+    return (
+      <div className="min-h-screen bg-[radial-gradient(circle_at_top_left,#eef4ff,transparent_40%),radial-gradient(circle_at_bottom_right,#f4fff7,transparent_45%),#fafafa] p-4 sm:p-6">
+        <div className="max-w-3xl mx-auto space-y-5">
+          <div className="rounded-3xl border border-white/70 bg-white/85 backdrop-blur-xl p-5 sm:p-6 shadow-[0_20px_60px_-30px_rgba(15,23,42,0.4)]">
+            <div className="flex justify-between items-center">
+              <Button onClick={() => setWorkflow('LANDING')} variant="ghost" size="icon" className="bg-zinc-100 hover:bg-zinc-200">
+                <ArrowLeft className="w-6 h-6" />
+              </Button>
+              <h2 className="text-xl sm:text-2xl font-bold tracking-tight">Saved Recipes</h2>
+              <div className="w-10" />
             </div>
-            <p className="text-zinc-400 font-medium">No saved recipes yet.</p>
+
+            <div className="mt-5 grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-3">
+              <div className="rounded-2xl border border-zinc-100 bg-zinc-50 p-3">
+                <p className="text-[10px] font-bold uppercase tracking-wider text-zinc-500">Saved</p>
+                <p className="text-2xl font-extrabold text-zinc-900">{visibleSavedRecipes.length}</p>
+              </div>
+              <div className="rounded-2xl border border-blue-100 bg-blue-50 p-3">
+                <p className="text-[10px] font-bold uppercase tracking-wider text-blue-700">Cuisines</p>
+                <p className="text-2xl font-extrabold text-blue-900">{cuisineCount}</p>
+              </div>
+              <div className="rounded-2xl border border-emerald-100 bg-emerald-50 p-3">
+                <p className="text-[10px] font-bold uppercase tracking-wider text-emerald-700">Ready To Cook</p>
+                <p className="text-2xl font-extrabold text-emerald-900">{visibleSavedRecipes.length}</p>
+              </div>
+              <div className="rounded-2xl border border-rose-100 bg-rose-50 p-3">
+                <p className="text-[10px] font-bold uppercase tracking-wider text-rose-700">Favorites</p>
+                <p className="text-2xl font-extrabold text-rose-900">{visibleSavedRecipes.length > 0 ? 'On' : 'Off'}</p>
+              </div>
+            </div>
+
+            {featuredCuisines.length > 0 && (
+              <div className="mt-4 flex flex-wrap gap-2">
+                {featuredCuisines.map((cuisine) => (
+                  <Badge key={cuisine} variant="info" className="text-[10px] px-3 py-1">{cuisine}</Badge>
+                ))}
+              </div>
+            )}
           </div>
-        ) : (
-          <div className="grid grid-cols-1 gap-4">
-            {visibleSavedRecipes.map(recipe => (
-              <Card key={recipe.id} className="p-4 flex items-center justify-between group">
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-2xl overflow-hidden">
-                    <img src={recipe.imageUrl} className="w-full h-full object-cover" referrerPolicy="no-referrer" onError={handleRecipeImageError} />
+
+          {visibleSavedRecipes.length === 0 ? (
+            <div className="rounded-3xl border border-zinc-100 bg-white p-10 text-center space-y-4 shadow-sm">
+              <div className="w-20 h-20 bg-zinc-50 rounded-[2rem] flex items-center justify-center mx-auto">
+                <History className="w-10 h-10 text-zinc-200" />
+              </div>
+              <div className="space-y-1">
+                <p className="text-zinc-700 font-semibold">No saved recipes yet.</p>
+                <p className="text-sm text-zinc-500">Save your favorite dishes from recipe cards to build your personal cookbook.</p>
+              </div>
+            </div>
+          ) : (
+            <div className="grid grid-cols-1 gap-3 sm:gap-4">
+              {visibleSavedRecipes.map(recipe => (
+                <Card key={recipe.id} className="p-4 sm:p-5 flex items-center justify-between gap-3 group border-zinc-100/90 hover:border-zinc-200 hover:shadow-lg">
+                  <div className="flex items-center gap-4 min-w-0">
+                    <div className="w-14 h-14 rounded-2xl overflow-hidden ring-2 ring-zinc-100 shrink-0">
+                      <img src={recipe.imageUrl} className="w-full h-full object-cover" referrerPolicy="no-referrer" onError={handleRecipeImageError} />
+                    </div>
+                    <div className="min-w-0">
+                      <h4 className="text-sm sm:text-base font-bold text-zinc-900 truncate">{recipe.title}</h4>
+                      <div className="flex items-center gap-2 mt-1">
+                        <p className="text-[10px] text-zinc-400 font-bold uppercase tracking-wider">{recipe.cuisine}</p>
+                        <Heart className="w-3.5 h-3.5 text-rose-400 fill-rose-400" />
+                      </div>
+                    </div>
                   </div>
-                  <div>
-                    <h4 className="text-sm font-bold text-zinc-900">{recipe.title}</h4>
-                    <p className="text-[10px] text-zinc-400 font-bold uppercase tracking-wider">{recipe.cuisine}</p>
+                  <div className="flex gap-2 shrink-0">
+                    <Button variant="ghost" size="icon" onClick={() => removeSavedRecipe(recipe.id)} className="hover:bg-red-50">
+                      <Trash2 className="w-4 h-4 text-zinc-300 hover:text-red-500" />
+                    </Button>
+                    <Button size="sm" className="px-4" onClick={() => {
+                      setSelectedRecipe(recipe);
+                      setCurrentStepIndex(0);
+                      setWorkflow('COOKING_MODE');
+                    }}>
+                      Cook
+                    </Button>
                   </div>
-                </div>
-                <div className="flex gap-2">
-                  <Button variant="ghost" size="icon" onClick={() => removeSavedRecipe(recipe.id)}>
-                    <Trash2 className="w-4 h-4 text-zinc-300 hover:text-red-500" />
-                  </Button>
-                  <Button size="sm" onClick={() => {
-                    setSelectedRecipe(recipe);
-                    setCurrentStepIndex(0);
-                    setWorkflow('COOKING_MODE');
-                  }}>
-                    Cook
-                  </Button>
-                </div>
-              </Card>
-            ))}
-          </div>
-        )}
+                </Card>
+              ))}
+            </div>
+          )}
+        </div>
       </div>
-    </div>
-  );
+    );
+  };
 
   const OfflineManualPage = () => (
     <div className="min-h-screen bg-zinc-50 p-6">
@@ -1761,8 +2031,19 @@ export default function App() {
     </div>
   );
 
+  const pagesWithoutNativeBack = ['PANTRY_TRACKER', 'MEAL_PLANNER', 'PROFILE_SETTINGS', 'SHOPPING_LIST'] as WorkflowState[];
+  const showGlobalBackButton = pagesWithoutNativeBack.includes(workflow) && workflowHistory.length > 0;
+
   return (
     <div className={cn("font-sans antialiased text-zinc-900", ['LANDING', 'API_CONFIG', 'CAMERA_SCAN', 'PROCESSING', 'COOKING_MODE'].indexOf(workflow) === -1 && "pb-24")}>
+      {showGlobalBackButton && (
+        <div className="fixed top-4 left-4 z-[55]">
+          <Button onClick={handleGoBack} variant="ghost" size="icon" className="bg-white/90 border border-zinc-200 shadow-sm backdrop-blur-xl hover:bg-white">
+            <ArrowLeft className="w-5 h-5" />
+          </Button>
+        </div>
+      )}
+
       <AnimatePresence mode="wait">
         {workflow === 'LANDING' && <LandingPage key="landing" />}
         {workflow === 'API_CONFIG' && <APIConfigPage key="config" />}

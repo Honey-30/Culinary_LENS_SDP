@@ -14,13 +14,33 @@ export interface InstantSuggestion {
 const ALL_RECIPES = [...STATIC_RECIPES, ...LARGE_RECIPE_DATABASE];
 
 function normalize(value: string): string {
-  return value.trim().toLowerCase();
+  return value
+    .trim()
+    .toLowerCase()
+    .replace(/[^a-z0-9\s]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
 }
 
-function collectIngredientNames(pantry: Ingredient[], scans: ScanResult[]): Set<string> {
+function stemWord(value: string): string {
+  if (value.endsWith('ies') && value.length > 4) return `${value.slice(0, -3)}y`;
+  if (value.endsWith('es') && value.length > 3) return value.slice(0, -2);
+  if (value.endsWith('s') && value.length > 2) return value.slice(0, -1);
+  return value;
+}
+
+function normalizeTokens(value: string): string[] {
+  return normalize(value)
+    .split(' ')
+    .map((token) => stemWord(token))
+    .filter((token) => token.length > 1);
+}
+
+function collectIngredientNames(pantry: Ingredient[], scans: ScanResult[], sessionIngredients: Ingredient[] = []): Set<string> {
   const names = new Set<string>();
 
   pantry.forEach((item) => names.add(normalize(item.name)));
+  sessionIngredients.forEach((item) => names.add(normalize(item.name)));
   scans.slice(0, 5).forEach((scan) => {
     scan.ingredients.forEach((item) => names.add(normalize(item.name)));
   });
@@ -72,25 +92,50 @@ function allergyPenalty(recipe: Recipe, blockedIngredients: string[]): number {
   return containsAllergen ? 0.25 : 1;
 }
 
-function overlapScore(recipe: Recipe, availableIngredients: Set<string>): number {
-  const matches = recipe.ingredients.filter((ingredient) => {
-    const lower = ingredient.toLowerCase();
-    return [...availableIngredients].some((available) => available.includes(lower) || lower.includes(available));
-  }).length;
+function hasStrongIngredientMatch(available: string, recipeIngredient: string): boolean {
+  const availableNormalized = normalize(available);
+  const recipeNormalized = normalize(recipeIngredient);
 
-  if (!recipe.ingredients.length) return 0;
-  return Math.round((matches / recipe.ingredients.length) * 100);
+  if (!availableNormalized || !recipeNormalized) return false;
+  if (availableNormalized === recipeNormalized) return true;
+
+  const availableTokens = normalizeTokens(availableNormalized);
+  const recipeTokens = normalizeTokens(recipeNormalized);
+
+  if (availableTokens.length === 0 || recipeTokens.length === 0) return false;
+
+  const overlap = recipeTokens.filter((token) =>
+    availableTokens.some((availableToken) => availableToken === token || availableToken.includes(token) || token.includes(availableToken))
+  );
+
+  return overlap.length > 0;
+}
+
+function getMatchStats(recipe: Recipe, availableIngredients: Set<string>): { readiness: number; matches: number; required: number } {
+  const required = recipe.ingredients.length;
+  if (!required) return { readiness: 0, matches: 0, required: 0 };
+
+  const available = [...availableIngredients];
+  const matches = recipe.ingredients.filter((ingredient) =>
+    available.some((availableIngredient) => hasStrongIngredientMatch(availableIngredient, ingredient))
+  ).length;
+
+  return {
+    readiness: Math.round((matches / required) * 100),
+    matches,
+    required,
+  };
 }
 
 export class InstantRecipeSuggestionService {
-  static suggestFromPantryAndHistory(scans: ScanResult[], limit: number = 3): InstantSuggestion[] {
+  static suggestFromPantryAndHistory(scans: ScanResult[], limit: number = 3, sessionIngredients: Ingredient[] = []): InstantSuggestion[] {
     const pantry = PantryService.getPantry();
     const tasteModel = TasteModelService.getTasteModel();
     const blocked = TasteModelService.getBlockedIngredients();
-    const availableIngredients = collectIngredientNames(pantry, scans);
+    const availableIngredients = collectIngredientNames(pantry, scans, sessionIngredients);
 
-    const ranked = ALL_RECIPES.map((recipe) => {
-      const readiness = overlapScore(recipe, availableIngredients);
+    const rankedAll = ALL_RECIPES.map((recipe) => {
+      const { readiness, matches, required } = getMatchStats(recipe, availableIngredients);
       const personalizedMultiplier =
         cuisineBoost(recipe, tasteModel) *
         dietBoost(recipe, tasteModel) *
@@ -98,23 +143,29 @@ export class InstantRecipeSuggestionService {
         allergyPenalty(recipe, blocked);
 
       const weightedScore = readiness * personalizedMultiplier;
-      return { recipe, readiness, weightedScore };
-    })
+      return { recipe, readiness, weightedScore, matches, required };
+    });
+
+    const qualityFiltered = rankedAll
       .filter((item) => item.readiness > 0)
+      .filter((item) => item.matches >= Math.min(2, item.required) || item.readiness >= 35);
+
+    const fallbackPool = rankedAll.filter((item) => item.readiness > 0);
+    const source = qualityFiltered.length > 0 ? qualityFiltered : fallbackPool;
+
+    return source
       .sort((a, b) => b.weightedScore - a.weightedScore)
       .slice(0, limit)
       .map((item) => ({
         recipe: item.recipe,
-        readinessScore: Math.min(100, Math.round(item.weightedScore)),
+        readinessScore: item.readiness,
         totalMinutes: item.recipe.prepTime + item.recipe.cookTime,
-        reason: this.buildReason(item.recipe, tasteModel, item.readiness),
+        reason: this.buildReason(item.recipe, tasteModel, item.readiness, item.matches, item.required),
       }));
-
-    return ranked;
   }
 
-  private static buildReason(recipe: Recipe, model: TasteModel, baseReadiness: number): string {
-    const reasons: string[] = [`${baseReadiness}% ingredient match`];
+  private static buildReason(recipe: Recipe, model: TasteModel, baseReadiness: number, matches: number, required: number): string {
+    const reasons: string[] = [`${matches}/${required} ingredients available (${baseReadiness}% match)`];
 
     if (!model.cuisinePreferences.includes('ALL') && model.cuisinePreferences.includes(recipe.cuisine.toUpperCase())) {
       reasons.push(`matches your ${recipe.cuisine} preference`);

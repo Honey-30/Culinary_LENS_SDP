@@ -129,7 +129,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'HARD',
     macros: { calories: 305, protein: 20, carbs: 45, fat: 15 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -150,7 +150,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'EASY',
     macros: { calories: 306, protein: 21, carbs: 46, fat: 16 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -192,7 +192,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'HARD',
     macros: { calories: 308, protein: 23, carbs: 48, fat: 18 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -213,7 +213,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'EASY',
     macros: { calories: 309, protein: 24, carbs: 49, fat: 19 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -255,7 +255,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'HARD',
     macros: { calories: 311, protein: 26, carbs: 51, fat: 21 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -444,7 +444,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'HARD',
     macros: { calories: 320, protein: 35, carbs: 60, fat: 10 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -465,7 +465,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'EASY',
     macros: { calories: 321, protein: 36, carbs: 61, fat: 11 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -507,7 +507,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'HARD',
     macros: { calories: 323, protein: 38, carbs: 63, fat: 13 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -528,7 +528,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'EASY',
     macros: { calories: 324, protein: 39, carbs: 64, fat: 14 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -570,7 +570,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'HARD',
     macros: { calories: 326, protein: 41, carbs: 66, fat: 16 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -759,7 +759,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'HARD',
     macros: { calories: 335, protein: 20, carbs: 45, fat: 25 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -780,7 +780,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'EASY',
     macros: { calories: 336, protein: 21, carbs: 46, fat: 26 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -822,7 +822,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'HARD',
     macros: { calories: 338, protein: 23, carbs: 48, fat: 28 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -843,7 +843,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'EASY',
     macros: { calories: 339, protein: 24, carbs: 49, fat: 29 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -885,7 +885,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'HARD',
     macros: { calories: 341, protein: 26, carbs: 51, fat: 11 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -1074,7 +1074,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'HARD',
     macros: { calories: 350, protein: 35, carbs: 60, fat: 20 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -1095,7 +1095,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'EASY',
     macros: { calories: 351, protein: 36, carbs: 61, fat: 21 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -1137,7 +1137,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'HARD',
     macros: { calories: 353, protein: 38, carbs: 63, fat: 23 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -1158,7 +1158,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'EASY',
     macros: { calories: 354, protein: 39, carbs: 64, fat: 24 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -1200,7 +1200,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'HARD',
     macros: { calories: 356, protein: 41, carbs: 66, fat: 26 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -1389,7 +1389,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'HARD',
     macros: { calories: 365, protein: 20, carbs: 45, fat: 15 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -1410,7 +1410,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'EASY',
     macros: { calories: 366, protein: 21, carbs: 46, fat: 16 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -1452,7 +1452,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'HARD',
     macros: { calories: 368, protein: 23, carbs: 48, fat: 18 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -1473,7 +1473,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'EASY',
     macros: { calories: 369, protein: 24, carbs: 49, fat: 19 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -1515,7 +1515,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'HARD',
     macros: { calories: 371, protein: 26, carbs: 51, fat: 21 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -1704,7 +1704,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'HARD',
     macros: { calories: 380, protein: 35, carbs: 60, fat: 10 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -1725,7 +1725,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'EASY',
     macros: { calories: 381, protein: 36, carbs: 61, fat: 11 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -1767,7 +1767,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'HARD',
     macros: { calories: 383, protein: 38, carbs: 63, fat: 13 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -1788,7 +1788,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'EASY',
     macros: { calories: 384, protein: 39, carbs: 64, fat: 14 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -1830,7 +1830,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'HARD',
     macros: { calories: 386, protein: 41, carbs: 66, fat: 16 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -2019,7 +2019,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'HARD',
     macros: { calories: 395, protein: 20, carbs: 45, fat: 25 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -2040,7 +2040,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'EASY',
     macros: { calories: 396, protein: 21, carbs: 46, fat: 26 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -2082,7 +2082,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'HARD',
     macros: { calories: 398, protein: 23, carbs: 48, fat: 28 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -2103,7 +2103,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'EASY',
     macros: { calories: 399, protein: 24, carbs: 49, fat: 29 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -2145,7 +2145,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'HARD',
     macros: { calories: 401, protein: 26, carbs: 51, fat: 11 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -2334,7 +2334,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'HARD',
     macros: { calories: 410, protein: 35, carbs: 60, fat: 20 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -2355,7 +2355,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'EASY',
     macros: { calories: 411, protein: 36, carbs: 61, fat: 21 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -2397,7 +2397,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'HARD',
     macros: { calories: 413, protein: 38, carbs: 63, fat: 23 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -2418,7 +2418,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'EASY',
     macros: { calories: 414, protein: 39, carbs: 64, fat: 24 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -2460,7 +2460,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'HARD',
     macros: { calories: 416, protein: 41, carbs: 66, fat: 26 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -2649,7 +2649,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'HARD',
     macros: { calories: 425, protein: 20, carbs: 45, fat: 15 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -2670,7 +2670,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'EASY',
     macros: { calories: 426, protein: 21, carbs: 46, fat: 16 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -2712,7 +2712,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'HARD',
     macros: { calories: 428, protein: 23, carbs: 48, fat: 18 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -2733,7 +2733,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'EASY',
     macros: { calories: 429, protein: 24, carbs: 49, fat: 19 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -2775,7 +2775,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'HARD',
     macros: { calories: 431, protein: 26, carbs: 51, fat: 21 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -2964,7 +2964,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'HARD',
     macros: { calories: 440, protein: 35, carbs: 60, fat: 10 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -2985,7 +2985,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'EASY',
     macros: { calories: 441, protein: 36, carbs: 61, fat: 11 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -3027,7 +3027,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'HARD',
     macros: { calories: 443, protein: 38, carbs: 63, fat: 13 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -3048,7 +3048,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'EASY',
     macros: { calories: 444, protein: 39, carbs: 64, fat: 14 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -3090,7 +3090,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'HARD',
     macros: { calories: 446, protein: 41, carbs: 66, fat: 16 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -3279,7 +3279,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'HARD',
     macros: { calories: 455, protein: 20, carbs: 45, fat: 25 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -3300,7 +3300,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'EASY',
     macros: { calories: 456, protein: 21, carbs: 46, fat: 26 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -3342,7 +3342,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'HARD',
     macros: { calories: 458, protein: 23, carbs: 48, fat: 28 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -3363,7 +3363,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'EASY',
     macros: { calories: 459, protein: 24, carbs: 49, fat: 29 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -3405,7 +3405,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'HARD',
     macros: { calories: 461, protein: 26, carbs: 51, fat: 11 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -3594,7 +3594,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'HARD',
     macros: { calories: 470, protein: 35, carbs: 60, fat: 20 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -3615,7 +3615,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'EASY',
     macros: { calories: 471, protein: 36, carbs: 61, fat: 21 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -3657,7 +3657,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'HARD',
     macros: { calories: 473, protein: 38, carbs: 63, fat: 23 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -3678,7 +3678,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'EASY',
     macros: { calories: 474, protein: 39, carbs: 64, fat: 24 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -3720,7 +3720,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'HARD',
     macros: { calories: 476, protein: 41, carbs: 66, fat: 26 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -3909,7 +3909,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'HARD',
     macros: { calories: 485, protein: 20, carbs: 45, fat: 15 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -3930,7 +3930,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'EASY',
     macros: { calories: 486, protein: 21, carbs: 46, fat: 16 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -3972,7 +3972,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'HARD',
     macros: { calories: 488, protein: 23, carbs: 48, fat: 18 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -3993,7 +3993,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'EASY',
     macros: { calories: 489, protein: 24, carbs: 49, fat: 19 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -4035,7 +4035,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'HARD',
     macros: { calories: 491, protein: 26, carbs: 51, fat: 21 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -4224,7 +4224,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'HARD',
     macros: { calories: 300, protein: 35, carbs: 60, fat: 10 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -4245,7 +4245,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'EASY',
     macros: { calories: 301, protein: 36, carbs: 61, fat: 11 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -4287,7 +4287,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'HARD',
     macros: { calories: 303, protein: 38, carbs: 63, fat: 13 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -4308,7 +4308,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'EASY',
     macros: { calories: 304, protein: 39, carbs: 64, fat: 14 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -4350,7 +4350,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'HARD',
     macros: { calories: 306, protein: 41, carbs: 66, fat: 16 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -4539,7 +4539,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'HARD',
     macros: { calories: 315, protein: 20, carbs: 45, fat: 25 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -4560,7 +4560,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'EASY',
     macros: { calories: 316, protein: 21, carbs: 46, fat: 26 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -4602,7 +4602,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'HARD',
     macros: { calories: 318, protein: 23, carbs: 48, fat: 28 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -4623,7 +4623,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'EASY',
     macros: { calories: 319, protein: 24, carbs: 49, fat: 29 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -4665,7 +4665,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'HARD',
     macros: { calories: 321, protein: 26, carbs: 51, fat: 11 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -4854,7 +4854,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'HARD',
     macros: { calories: 330, protein: 35, carbs: 60, fat: 20 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -4875,7 +4875,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'EASY',
     macros: { calories: 331, protein: 36, carbs: 61, fat: 21 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -4917,7 +4917,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'HARD',
     macros: { calories: 333, protein: 38, carbs: 63, fat: 23 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -4938,7 +4938,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'EASY',
     macros: { calories: 334, protein: 39, carbs: 64, fat: 24 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -4980,7 +4980,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'HARD',
     macros: { calories: 336, protein: 41, carbs: 66, fat: 26 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -5169,7 +5169,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'HARD',
     macros: { calories: 345, protein: 20, carbs: 45, fat: 15 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -5190,7 +5190,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'EASY',
     macros: { calories: 346, protein: 21, carbs: 46, fat: 16 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -5232,7 +5232,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'HARD',
     macros: { calories: 348, protein: 23, carbs: 48, fat: 18 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -5253,7 +5253,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'EASY',
     macros: { calories: 349, protein: 24, carbs: 49, fat: 19 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -5295,7 +5295,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'HARD',
     macros: { calories: 351, protein: 26, carbs: 51, fat: 21 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -5484,7 +5484,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'HARD',
     macros: { calories: 360, protein: 35, carbs: 60, fat: 10 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -5505,7 +5505,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'EASY',
     macros: { calories: 361, protein: 36, carbs: 61, fat: 11 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -5547,7 +5547,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'HARD',
     macros: { calories: 363, protein: 38, carbs: 63, fat: 13 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -5568,7 +5568,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'EASY',
     macros: { calories: 364, protein: 39, carbs: 64, fat: 14 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -5610,7 +5610,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'HARD',
     macros: { calories: 366, protein: 41, carbs: 66, fat: 16 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -5799,7 +5799,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'HARD',
     macros: { calories: 375, protein: 20, carbs: 45, fat: 25 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -5820,7 +5820,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'EASY',
     macros: { calories: 376, protein: 21, carbs: 46, fat: 26 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -5862,7 +5862,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'HARD',
     macros: { calories: 378, protein: 23, carbs: 48, fat: 28 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -5883,7 +5883,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'EASY',
     macros: { calories: 379, protein: 24, carbs: 49, fat: 29 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -5925,7 +5925,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'HARD',
     macros: { calories: 381, protein: 26, carbs: 51, fat: 11 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -6114,7 +6114,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'HARD',
     macros: { calories: 390, protein: 35, carbs: 60, fat: 20 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -6135,7 +6135,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'EASY',
     macros: { calories: 391, protein: 36, carbs: 61, fat: 21 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -6177,7 +6177,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'HARD',
     macros: { calories: 393, protein: 38, carbs: 63, fat: 23 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -6198,7 +6198,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'EASY',
     macros: { calories: 394, protein: 39, carbs: 64, fat: 24 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -6240,7 +6240,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'HARD',
     macros: { calories: 396, protein: 41, carbs: 66, fat: 26 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -6429,7 +6429,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'HARD',
     macros: { calories: 405, protein: 20, carbs: 45, fat: 15 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -6450,7 +6450,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'EASY',
     macros: { calories: 406, protein: 21, carbs: 46, fat: 16 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -6492,7 +6492,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'HARD',
     macros: { calories: 408, protein: 23, carbs: 48, fat: 18 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -6513,7 +6513,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'EASY',
     macros: { calories: 409, protein: 24, carbs: 49, fat: 19 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -6555,7 +6555,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'HARD',
     macros: { calories: 411, protein: 26, carbs: 51, fat: 21 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -6744,7 +6744,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'HARD',
     macros: { calories: 420, protein: 35, carbs: 60, fat: 10 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -6765,7 +6765,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'EASY',
     macros: { calories: 421, protein: 36, carbs: 61, fat: 11 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -6807,7 +6807,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'HARD',
     macros: { calories: 423, protein: 38, carbs: 63, fat: 13 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -6828,7 +6828,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'EASY',
     macros: { calories: 424, protein: 39, carbs: 64, fat: 14 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -6870,7 +6870,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'HARD',
     macros: { calories: 426, protein: 41, carbs: 66, fat: 16 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -7059,7 +7059,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'HARD',
     macros: { calories: 435, protein: 20, carbs: 45, fat: 25 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -7080,7 +7080,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'EASY',
     macros: { calories: 436, protein: 21, carbs: 46, fat: 26 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -7122,7 +7122,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'HARD',
     macros: { calories: 438, protein: 23, carbs: 48, fat: 28 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -7143,7 +7143,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'EASY',
     macros: { calories: 439, protein: 24, carbs: 49, fat: 29 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -7185,7 +7185,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'HARD',
     macros: { calories: 441, protein: 26, carbs: 51, fat: 11 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -7374,7 +7374,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'HARD',
     macros: { calories: 450, protein: 35, carbs: 60, fat: 20 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -7395,7 +7395,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'EASY',
     macros: { calories: 451, protein: 36, carbs: 61, fat: 21 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -7437,7 +7437,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'HARD',
     macros: { calories: 453, protein: 38, carbs: 63, fat: 23 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -7458,7 +7458,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'EASY',
     macros: { calories: 454, protein: 39, carbs: 64, fat: 24 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -7500,7 +7500,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'HARD',
     macros: { calories: 456, protein: 41, carbs: 66, fat: 26 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -7689,7 +7689,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'HARD',
     macros: { calories: 465, protein: 20, carbs: 45, fat: 15 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -7710,7 +7710,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'EASY',
     macros: { calories: 466, protein: 21, carbs: 46, fat: 16 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -7752,7 +7752,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'HARD',
     macros: { calories: 468, protein: 23, carbs: 48, fat: 18 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -7773,7 +7773,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'EASY',
     macros: { calories: 469, protein: 24, carbs: 49, fat: 19 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -7815,7 +7815,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'HARD',
     macros: { calories: 471, protein: 26, carbs: 51, fat: 21 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -8004,7 +8004,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'HARD',
     macros: { calories: 480, protein: 35, carbs: 60, fat: 10 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -8025,7 +8025,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'EASY',
     macros: { calories: 481, protein: 36, carbs: 61, fat: 11 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -8067,7 +8067,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'HARD',
     macros: { calories: 483, protein: 38, carbs: 63, fat: 13 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -8088,7 +8088,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'EASY',
     macros: { calories: 484, protein: 39, carbs: 64, fat: 14 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -8130,7 +8130,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'HARD',
     macros: { calories: 486, protein: 41, carbs: 66, fat: 16 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -8319,7 +8319,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'HARD',
     macros: { calories: 495, protein: 20, carbs: 45, fat: 25 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -8340,7 +8340,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'EASY',
     macros: { calories: 496, protein: 21, carbs: 46, fat: 26 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -8382,7 +8382,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'HARD',
     macros: { calories: 498, protein: 23, carbs: 48, fat: 28 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -8403,7 +8403,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'EASY',
     macros: { calories: 499, protein: 24, carbs: 49, fat: 29 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -8445,7 +8445,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'HARD',
     macros: { calories: 301, protein: 26, carbs: 51, fat: 11 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -8634,7 +8634,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'HARD',
     macros: { calories: 310, protein: 35, carbs: 60, fat: 20 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -8655,7 +8655,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'EASY',
     macros: { calories: 311, protein: 36, carbs: 61, fat: 21 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -8697,7 +8697,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'HARD',
     macros: { calories: 313, protein: 38, carbs: 63, fat: 23 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -8718,7 +8718,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'EASY',
     macros: { calories: 314, protein: 39, carbs: 64, fat: 24 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -8760,7 +8760,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'HARD',
     macros: { calories: 316, protein: 41, carbs: 66, fat: 26 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -8949,7 +8949,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'HARD',
     macros: { calories: 325, protein: 20, carbs: 45, fat: 15 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -8970,7 +8970,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'EASY',
     macros: { calories: 326, protein: 21, carbs: 46, fat: 16 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -9012,7 +9012,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'HARD',
     macros: { calories: 328, protein: 23, carbs: 48, fat: 18 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -9033,7 +9033,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'EASY',
     macros: { calories: 329, protein: 24, carbs: 49, fat: 19 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -9075,7 +9075,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'HARD',
     macros: { calories: 331, protein: 26, carbs: 51, fat: 21 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -9264,7 +9264,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'HARD',
     macros: { calories: 340, protein: 35, carbs: 60, fat: 10 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -9285,7 +9285,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'EASY',
     macros: { calories: 341, protein: 36, carbs: 61, fat: 11 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -9327,7 +9327,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'HARD',
     macros: { calories: 343, protein: 38, carbs: 63, fat: 13 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -9348,7 +9348,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'EASY',
     macros: { calories: 344, protein: 39, carbs: 64, fat: 14 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -9390,7 +9390,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'HARD',
     macros: { calories: 346, protein: 41, carbs: 66, fat: 16 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -9579,7 +9579,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'HARD',
     macros: { calories: 355, protein: 20, carbs: 45, fat: 25 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -9600,7 +9600,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'EASY',
     macros: { calories: 356, protein: 21, carbs: 46, fat: 26 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -9642,7 +9642,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'HARD',
     macros: { calories: 358, protein: 23, carbs: 48, fat: 28 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -9663,7 +9663,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'EASY',
     macros: { calories: 359, protein: 24, carbs: 49, fat: 29 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -9705,7 +9705,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'HARD',
     macros: { calories: 361, protein: 26, carbs: 51, fat: 11 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -9894,7 +9894,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'HARD',
     macros: { calories: 370, protein: 35, carbs: 60, fat: 20 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -9915,7 +9915,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'EASY',
     macros: { calories: 371, protein: 36, carbs: 61, fat: 21 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -9957,7 +9957,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'HARD',
     macros: { calories: 373, protein: 38, carbs: 63, fat: 23 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -9978,7 +9978,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'EASY',
     macros: { calories: 374, protein: 39, carbs: 64, fat: 24 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -10020,7 +10020,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'HARD',
     macros: { calories: 376, protein: 41, carbs: 66, fat: 26 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -10209,7 +10209,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'HARD',
     macros: { calories: 385, protein: 20, carbs: 45, fat: 15 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -10230,7 +10230,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'EASY',
     macros: { calories: 386, protein: 21, carbs: 46, fat: 16 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -10272,7 +10272,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'HARD',
     macros: { calories: 388, protein: 23, carbs: 48, fat: 18 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -10293,7 +10293,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'EASY',
     macros: { calories: 389, protein: 24, carbs: 49, fat: 19 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -10335,7 +10335,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'HARD',
     macros: { calories: 391, protein: 26, carbs: 51, fat: 21 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -10524,7 +10524,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'HARD',
     macros: { calories: 400, protein: 35, carbs: 60, fat: 10 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -10545,7 +10545,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'EASY',
     macros: { calories: 401, protein: 36, carbs: 61, fat: 11 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -10587,7 +10587,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'HARD',
     macros: { calories: 403, protein: 38, carbs: 63, fat: 13 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -10608,7 +10608,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'EASY',
     macros: { calories: 404, protein: 39, carbs: 64, fat: 14 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -10650,7 +10650,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'HARD',
     macros: { calories: 406, protein: 41, carbs: 66, fat: 16 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -10839,7 +10839,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'HARD',
     macros: { calories: 415, protein: 20, carbs: 45, fat: 25 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -10860,7 +10860,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'EASY',
     macros: { calories: 416, protein: 21, carbs: 46, fat: 26 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -10902,7 +10902,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'HARD',
     macros: { calories: 418, protein: 23, carbs: 48, fat: 28 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -10923,7 +10923,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'EASY',
     macros: { calories: 419, protein: 24, carbs: 49, fat: 29 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -10965,7 +10965,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'HARD',
     macros: { calories: 421, protein: 26, carbs: 51, fat: 11 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -11154,7 +11154,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'HARD',
     macros: { calories: 430, protein: 35, carbs: 60, fat: 20 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -11175,7 +11175,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'EASY',
     macros: { calories: 431, protein: 36, carbs: 61, fat: 21 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -11217,7 +11217,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'HARD',
     macros: { calories: 433, protein: 38, carbs: 63, fat: 23 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -11238,7 +11238,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'EASY',
     macros: { calories: 434, protein: 39, carbs: 64, fat: 24 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -11280,7 +11280,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'HARD',
     macros: { calories: 436, protein: 41, carbs: 66, fat: 26 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -11469,7 +11469,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'HARD',
     macros: { calories: 445, protein: 20, carbs: 45, fat: 15 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -11490,7 +11490,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'EASY',
     macros: { calories: 446, protein: 21, carbs: 46, fat: 16 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -11532,7 +11532,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'HARD',
     macros: { calories: 448, protein: 23, carbs: 48, fat: 18 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -11553,7 +11553,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'EASY',
     macros: { calories: 449, protein: 24, carbs: 49, fat: 19 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -11595,7 +11595,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'HARD',
     macros: { calories: 451, protein: 26, carbs: 51, fat: 21 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -11784,7 +11784,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'HARD',
     macros: { calories: 460, protein: 35, carbs: 60, fat: 10 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -11805,7 +11805,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'EASY',
     macros: { calories: 461, protein: 36, carbs: 61, fat: 11 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -11847,7 +11847,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'HARD',
     macros: { calories: 463, protein: 38, carbs: 63, fat: 13 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -11868,7 +11868,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'EASY',
     macros: { calories: 464, protein: 39, carbs: 64, fat: 14 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -11910,7 +11910,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'HARD',
     macros: { calories: 466, protein: 41, carbs: 66, fat: 16 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -12099,7 +12099,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'HARD',
     macros: { calories: 475, protein: 20, carbs: 45, fat: 25 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -12120,7 +12120,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'EASY',
     macros: { calories: 476, protein: 21, carbs: 46, fat: 26 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -12162,7 +12162,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'HARD',
     macros: { calories: 478, protein: 23, carbs: 48, fat: 28 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -12183,7 +12183,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'EASY',
     macros: { calories: 479, protein: 24, carbs: 49, fat: 29 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -12225,7 +12225,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'HARD',
     macros: { calories: 481, protein: 26, carbs: 51, fat: 11 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -12414,7 +12414,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'HARD',
     macros: { calories: 490, protein: 35, carbs: 60, fat: 20 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -12435,7 +12435,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'EASY',
     macros: { calories: 491, protein: 36, carbs: 61, fat: 21 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -12477,7 +12477,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'HARD',
     macros: { calories: 493, protein: 38, carbs: 63, fat: 23 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -12498,7 +12498,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'EASY',
     macros: { calories: 494, protein: 39, carbs: 64, fat: 24 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -12540,7 +12540,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'HARD',
     macros: { calories: 496, protein: 41, carbs: 66, fat: 26 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -12729,7 +12729,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'HARD',
     macros: { calories: 305, protein: 20, carbs: 45, fat: 15 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -12750,7 +12750,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'EASY',
     macros: { calories: 306, protein: 21, carbs: 46, fat: 16 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -12792,7 +12792,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'HARD',
     macros: { calories: 308, protein: 23, carbs: 48, fat: 18 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -12813,7 +12813,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'EASY',
     macros: { calories: 309, protein: 24, carbs: 49, fat: 19 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -12855,7 +12855,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'HARD',
     macros: { calories: 311, protein: 26, carbs: 51, fat: 21 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -13044,7 +13044,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'HARD',
     macros: { calories: 320, protein: 35, carbs: 60, fat: 10 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -13065,7 +13065,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'EASY',
     macros: { calories: 321, protein: 36, carbs: 61, fat: 11 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -13107,7 +13107,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'HARD',
     macros: { calories: 323, protein: 38, carbs: 63, fat: 13 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -13128,7 +13128,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'EASY',
     macros: { calories: 324, protein: 39, carbs: 64, fat: 14 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -13170,7 +13170,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'HARD',
     macros: { calories: 326, protein: 41, carbs: 66, fat: 16 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -13359,7 +13359,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'HARD',
     macros: { calories: 335, protein: 20, carbs: 45, fat: 25 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -13380,7 +13380,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'EASY',
     macros: { calories: 336, protein: 21, carbs: 46, fat: 26 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -13422,7 +13422,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'HARD',
     macros: { calories: 338, protein: 23, carbs: 48, fat: 28 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -13443,7 +13443,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'EASY',
     macros: { calories: 339, protein: 24, carbs: 49, fat: 29 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -13485,7 +13485,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'HARD',
     macros: { calories: 341, protein: 26, carbs: 51, fat: 11 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -13674,7 +13674,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'HARD',
     macros: { calories: 350, protein: 35, carbs: 60, fat: 20 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -13695,7 +13695,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'EASY',
     macros: { calories: 351, protein: 36, carbs: 61, fat: 21 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -13737,7 +13737,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'HARD',
     macros: { calories: 353, protein: 38, carbs: 63, fat: 23 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -13758,7 +13758,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'EASY',
     macros: { calories: 354, protein: 39, carbs: 64, fat: 24 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -13800,7 +13800,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'HARD',
     macros: { calories: 356, protein: 41, carbs: 66, fat: 26 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -13989,7 +13989,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'HARD',
     macros: { calories: 365, protein: 20, carbs: 45, fat: 15 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -14010,7 +14010,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'EASY',
     macros: { calories: 366, protein: 21, carbs: 46, fat: 16 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -14052,7 +14052,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'HARD',
     macros: { calories: 368, protein: 23, carbs: 48, fat: 18 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -14073,7 +14073,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'EASY',
     macros: { calories: 369, protein: 24, carbs: 49, fat: 19 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -14115,7 +14115,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'HARD',
     macros: { calories: 371, protein: 26, carbs: 51, fat: 21 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -14304,7 +14304,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'HARD',
     macros: { calories: 380, protein: 35, carbs: 60, fat: 10 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -14325,7 +14325,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'EASY',
     macros: { calories: 381, protein: 36, carbs: 61, fat: 11 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -14367,7 +14367,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'HARD',
     macros: { calories: 383, protein: 38, carbs: 63, fat: 13 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -14388,7 +14388,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'EASY',
     macros: { calories: 384, protein: 39, carbs: 64, fat: 14 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -14430,7 +14430,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'HARD',
     macros: { calories: 386, protein: 41, carbs: 66, fat: 16 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -14619,7 +14619,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'HARD',
     macros: { calories: 395, protein: 20, carbs: 45, fat: 25 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -14640,7 +14640,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'EASY',
     macros: { calories: 396, protein: 21, carbs: 46, fat: 26 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -14682,7 +14682,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'HARD',
     macros: { calories: 398, protein: 23, carbs: 48, fat: 28 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -14703,7 +14703,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'EASY',
     macros: { calories: 399, protein: 24, carbs: 49, fat: 29 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -14745,7 +14745,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'HARD',
     macros: { calories: 401, protein: 26, carbs: 51, fat: 11 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -14934,7 +14934,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'HARD',
     macros: { calories: 410, protein: 35, carbs: 60, fat: 20 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -14955,7 +14955,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'EASY',
     macros: { calories: 411, protein: 36, carbs: 61, fat: 21 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -14997,7 +14997,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'HARD',
     macros: { calories: 413, protein: 38, carbs: 63, fat: 23 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -15018,7 +15018,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'EASY',
     macros: { calories: 414, protein: 39, carbs: 64, fat: 24 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -15060,7 +15060,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'HARD',
     macros: { calories: 416, protein: 41, carbs: 66, fat: 26 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -15249,7 +15249,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'HARD',
     macros: { calories: 425, protein: 20, carbs: 45, fat: 15 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -15270,7 +15270,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'EASY',
     macros: { calories: 426, protein: 21, carbs: 46, fat: 16 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -15312,7 +15312,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'HARD',
     macros: { calories: 428, protein: 23, carbs: 48, fat: 18 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -15333,7 +15333,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'EASY',
     macros: { calories: 429, protein: 24, carbs: 49, fat: 19 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -15375,7 +15375,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'HARD',
     macros: { calories: 431, protein: 26, carbs: 51, fat: 21 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -15564,7 +15564,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'HARD',
     macros: { calories: 440, protein: 35, carbs: 60, fat: 10 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -15585,7 +15585,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'EASY',
     macros: { calories: 441, protein: 36, carbs: 61, fat: 11 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -15627,7 +15627,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'HARD',
     macros: { calories: 443, protein: 38, carbs: 63, fat: 13 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -15648,7 +15648,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'EASY',
     macros: { calories: 444, protein: 39, carbs: 64, fat: 14 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -15690,7 +15690,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'HARD',
     macros: { calories: 446, protein: 41, carbs: 66, fat: 16 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -15879,7 +15879,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'HARD',
     macros: { calories: 455, protein: 20, carbs: 45, fat: 25 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -15900,7 +15900,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'EASY',
     macros: { calories: 456, protein: 21, carbs: 46, fat: 26 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -15942,7 +15942,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'HARD',
     macros: { calories: 458, protein: 23, carbs: 48, fat: 28 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -15963,7 +15963,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'EASY',
     macros: { calories: 459, protein: 24, carbs: 49, fat: 29 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -16005,7 +16005,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'HARD',
     macros: { calories: 461, protein: 26, carbs: 51, fat: 11 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -16194,7 +16194,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'HARD',
     macros: { calories: 470, protein: 35, carbs: 60, fat: 20 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -16215,7 +16215,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'EASY',
     macros: { calories: 471, protein: 36, carbs: 61, fat: 21 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -16257,7 +16257,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'HARD',
     macros: { calories: 473, protein: 38, carbs: 63, fat: 23 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -16278,7 +16278,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'EASY',
     macros: { calories: 474, protein: 39, carbs: 64, fat: 24 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -16320,7 +16320,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'HARD',
     macros: { calories: 476, protein: 41, carbs: 66, fat: 26 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -16509,7 +16509,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'HARD',
     macros: { calories: 485, protein: 20, carbs: 45, fat: 15 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -16530,7 +16530,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'EASY',
     macros: { calories: 486, protein: 21, carbs: 46, fat: 16 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -16572,7 +16572,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'HARD',
     macros: { calories: 488, protein: 23, carbs: 48, fat: 18 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -16593,7 +16593,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'EASY',
     macros: { calories: 489, protein: 24, carbs: 49, fat: 19 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -16635,7 +16635,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'HARD',
     macros: { calories: 491, protein: 26, carbs: 51, fat: 21 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -16824,7 +16824,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'HARD',
     macros: { calories: 300, protein: 35, carbs: 60, fat: 10 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -16845,7 +16845,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'EASY',
     macros: { calories: 301, protein: 36, carbs: 61, fat: 11 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -16887,7 +16887,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'HARD',
     macros: { calories: 303, protein: 38, carbs: 63, fat: 13 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -16908,7 +16908,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'EASY',
     macros: { calories: 304, protein: 39, carbs: 64, fat: 14 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -16950,7 +16950,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'HARD',
     macros: { calories: 306, protein: 41, carbs: 66, fat: 16 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -17139,7 +17139,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'HARD',
     macros: { calories: 315, protein: 20, carbs: 45, fat: 25 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -17160,7 +17160,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'EASY',
     macros: { calories: 316, protein: 21, carbs: 46, fat: 26 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -17202,7 +17202,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'HARD',
     macros: { calories: 318, protein: 23, carbs: 48, fat: 28 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -17223,7 +17223,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'EASY',
     macros: { calories: 319, protein: 24, carbs: 49, fat: 29 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -17265,7 +17265,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'HARD',
     macros: { calories: 321, protein: 26, carbs: 51, fat: 11 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -17454,7 +17454,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'HARD',
     macros: { calories: 330, protein: 35, carbs: 60, fat: 20 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -17475,7 +17475,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'EASY',
     macros: { calories: 331, protein: 36, carbs: 61, fat: 21 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -17517,7 +17517,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'HARD',
     macros: { calories: 333, protein: 38, carbs: 63, fat: 23 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -17538,7 +17538,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'EASY',
     macros: { calories: 334, protein: 39, carbs: 64, fat: 24 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -17580,7 +17580,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'HARD',
     macros: { calories: 336, protein: 41, carbs: 66, fat: 26 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -17769,7 +17769,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'HARD',
     macros: { calories: 345, protein: 20, carbs: 45, fat: 15 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -17790,7 +17790,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'EASY',
     macros: { calories: 346, protein: 21, carbs: 46, fat: 16 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -17832,7 +17832,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'HARD',
     macros: { calories: 348, protein: 23, carbs: 48, fat: 18 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -17853,7 +17853,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'EASY',
     macros: { calories: 349, protein: 24, carbs: 49, fat: 19 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -17895,7 +17895,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'HARD',
     macros: { calories: 351, protein: 26, carbs: 51, fat: 21 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -18084,7 +18084,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'HARD',
     macros: { calories: 360, protein: 35, carbs: 60, fat: 10 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -18105,7 +18105,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'EASY',
     macros: { calories: 361, protein: 36, carbs: 61, fat: 11 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -18147,7 +18147,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'HARD',
     macros: { calories: 363, protein: 38, carbs: 63, fat: 13 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -18168,7 +18168,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'EASY',
     macros: { calories: 364, protein: 39, carbs: 64, fat: 14 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -18210,7 +18210,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'HARD',
     macros: { calories: 366, protein: 41, carbs: 66, fat: 16 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -18399,7 +18399,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'HARD',
     macros: { calories: 375, protein: 20, carbs: 45, fat: 25 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -18420,7 +18420,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'EASY',
     macros: { calories: 376, protein: 21, carbs: 46, fat: 26 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -18462,7 +18462,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'HARD',
     macros: { calories: 378, protein: 23, carbs: 48, fat: 28 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -18483,7 +18483,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'EASY',
     macros: { calories: 379, protein: 24, carbs: 49, fat: 29 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -18525,7 +18525,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'HARD',
     macros: { calories: 381, protein: 26, carbs: 51, fat: 11 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -18714,7 +18714,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'HARD',
     macros: { calories: 390, protein: 35, carbs: 60, fat: 20 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -18735,7 +18735,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'EASY',
     macros: { calories: 391, protein: 36, carbs: 61, fat: 21 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -18777,7 +18777,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'HARD',
     macros: { calories: 393, protein: 38, carbs: 63, fat: 23 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -18798,7 +18798,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'EASY',
     macros: { calories: 394, protein: 39, carbs: 64, fat: 24 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -18840,7 +18840,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'HARD',
     macros: { calories: 396, protein: 41, carbs: 66, fat: 26 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -19029,7 +19029,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'HARD',
     macros: { calories: 405, protein: 20, carbs: 45, fat: 15 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -19050,7 +19050,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'EASY',
     macros: { calories: 406, protein: 21, carbs: 46, fat: 16 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -19092,7 +19092,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'HARD',
     macros: { calories: 408, protein: 23, carbs: 48, fat: 18 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -19113,7 +19113,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'EASY',
     macros: { calories: 409, protein: 24, carbs: 49, fat: 19 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -19155,7 +19155,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'HARD',
     macros: { calories: 411, protein: 26, carbs: 51, fat: 21 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -19344,7 +19344,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'HARD',
     macros: { calories: 420, protein: 35, carbs: 60, fat: 10 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -19365,7 +19365,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'EASY',
     macros: { calories: 421, protein: 36, carbs: 61, fat: 11 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -19407,7 +19407,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'HARD',
     macros: { calories: 423, protein: 38, carbs: 63, fat: 13 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -19428,7 +19428,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'EASY',
     macros: { calories: 424, protein: 39, carbs: 64, fat: 14 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -19470,7 +19470,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'HARD',
     macros: { calories: 426, protein: 41, carbs: 66, fat: 16 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -19659,7 +19659,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'HARD',
     macros: { calories: 435, protein: 20, carbs: 45, fat: 25 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -19680,7 +19680,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'EASY',
     macros: { calories: 436, protein: 21, carbs: 46, fat: 26 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -19722,7 +19722,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'HARD',
     macros: { calories: 438, protein: 23, carbs: 48, fat: 28 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -19743,7 +19743,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'EASY',
     macros: { calories: 439, protein: 24, carbs: 49, fat: 29 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -19785,7 +19785,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'HARD',
     macros: { calories: 441, protein: 26, carbs: 51, fat: 11 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -19974,7 +19974,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'HARD',
     macros: { calories: 450, protein: 35, carbs: 60, fat: 20 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -19995,7 +19995,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'EASY',
     macros: { calories: 451, protein: 36, carbs: 61, fat: 21 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -20037,7 +20037,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'HARD',
     macros: { calories: 453, protein: 38, carbs: 63, fat: 23 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -20058,7 +20058,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'EASY',
     macros: { calories: 454, protein: 39, carbs: 64, fat: 24 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -20100,7 +20100,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'HARD',
     macros: { calories: 456, protein: 41, carbs: 66, fat: 26 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -20289,7 +20289,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'HARD',
     macros: { calories: 465, protein: 20, carbs: 45, fat: 15 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -20310,7 +20310,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'EASY',
     macros: { calories: 466, protein: 21, carbs: 46, fat: 16 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -20352,7 +20352,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'HARD',
     macros: { calories: 468, protein: 23, carbs: 48, fat: 18 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -20373,7 +20373,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'EASY',
     macros: { calories: 469, protein: 24, carbs: 49, fat: 19 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -20415,7 +20415,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'HARD',
     macros: { calories: 471, protein: 26, carbs: 51, fat: 21 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -20604,7 +20604,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'HARD',
     macros: { calories: 480, protein: 35, carbs: 60, fat: 10 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -20625,7 +20625,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'EASY',
     macros: { calories: 481, protein: 36, carbs: 61, fat: 11 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -20667,7 +20667,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'HARD',
     macros: { calories: 483, protein: 38, carbs: 63, fat: 13 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -20688,7 +20688,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'EASY',
     macros: { calories: 484, protein: 39, carbs: 64, fat: 14 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -20730,7 +20730,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'HARD',
     macros: { calories: 486, protein: 41, carbs: 66, fat: 16 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -20919,7 +20919,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'HARD',
     macros: { calories: 495, protein: 20, carbs: 45, fat: 25 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -20940,7 +20940,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'EASY',
     macros: { calories: 496, protein: 21, carbs: 46, fat: 26 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -20982,7 +20982,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'HARD',
     macros: { calories: 498, protein: 23, carbs: 48, fat: 28 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -21003,7 +21003,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'EASY',
     macros: { calories: 499, protein: 24, carbs: 49, fat: 29 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -21045,7 +21045,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'HARD',
     macros: { calories: 301, protein: 26, carbs: 51, fat: 11 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -21234,7 +21234,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'HARD',
     macros: { calories: 310, protein: 35, carbs: 60, fat: 20 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -21255,7 +21255,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'EASY',
     macros: { calories: 311, protein: 36, carbs: 61, fat: 21 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -21297,7 +21297,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'HARD',
     macros: { calories: 313, protein: 38, carbs: 63, fat: 23 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -21318,7 +21318,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'EASY',
     macros: { calories: 314, protein: 39, carbs: 64, fat: 24 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -21360,7 +21360,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'HARD',
     macros: { calories: 316, protein: 41, carbs: 66, fat: 26 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -21549,7 +21549,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'HARD',
     macros: { calories: 325, protein: 20, carbs: 45, fat: 15 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -21570,7 +21570,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'EASY',
     macros: { calories: 326, protein: 21, carbs: 46, fat: 16 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -21612,7 +21612,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'HARD',
     macros: { calories: 328, protein: 23, carbs: 48, fat: 18 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -21633,7 +21633,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'EASY',
     macros: { calories: 329, protein: 24, carbs: 49, fat: 19 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -21675,7 +21675,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'HARD',
     macros: { calories: 331, protein: 26, carbs: 51, fat: 21 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -21864,7 +21864,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'HARD',
     macros: { calories: 340, protein: 35, carbs: 60, fat: 10 },
-    imageUrl: 'https://images.unsplash.com/photo-1515521596933-e7db28b5ef70?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -21885,7 +21885,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 3,
     difficulty: 'EASY',
     macros: { calories: 341, protein: 36, carbs: 61, fat: 11 },
-    imageUrl: 'https://images.unsplash.com/photo-1624945359745-55ee0dae68dd?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -21927,7 +21927,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 5,
     difficulty: 'HARD',
     macros: { calories: 343, protein: 38, carbs: 63, fat: 13 },
-    imageUrl: 'https://images.unsplash.com/photo-1505521585876-73e1a2d1bfa2?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1565299585323-38d6b0865b47?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -21948,7 +21948,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 2,
     difficulty: 'EASY',
     macros: { calories: 344, protein: 39, carbs: 64, fat: 14 },
-    imageUrl: 'https://images.unsplash.com/photo-1571407970349-bc89b51d976f?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
@@ -21990,7 +21990,7 @@ export const STATIC_RECIPES: Recipe[] = [
     servings: 4,
     difficulty: 'HARD',
     macros: { calories: 346, protein: 41, carbs: 66, fat: 16 },
-    imageUrl: 'https://images.unsplash.com/photo-1583042163980-b973d5acca35?auto=format&fit=crop&q=80&w=1000',
+    imageUrl: 'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&q=80&w=1000',
     source: 'STATIC'
   },
   {
