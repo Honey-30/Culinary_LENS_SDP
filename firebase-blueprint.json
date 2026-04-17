@@ -1,0 +1,67 @@
+{
+  "entities": {
+    "Recipe": {
+      "title": "Recipe",
+      "description": "A recipe object containing instructions, ingredients, and nutritional information.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "description": { "type": "string" },
+        "cuisine": { "type": "string" },
+        "ingredients": { "type": "array", "items": { "type": "string" } },
+        "steps": { "type": "array", "items": { "$ref": "RecipeStep" } },
+        "prepTime": { "type": "number" },
+        "cookTime": { "type": "number" },
+        "servings": { "type": "number" },
+        "difficulty": { "type": "string", "enum": ["EASY", "MEDIUM", "HARD"] },
+        "macros": {
+          "type": "object",
+          "properties": {
+            "calories": { "type": "number" },
+            "protein": { "type": "number" },
+            "carbs": { "type": "number" },
+            "fat": { "type": "number" }
+          }
+        },
+        "imageUrl": { "type": "string" },
+        "source": { "type": "string", "enum": ["STATIC", "AI"] }
+      },
+      "required": ["id", "title", "ingredients", "steps"]
+    },
+    "RecipeStep": {
+      "title": "RecipeStep",
+      "description": "A single step in a recipe.",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "instruction": { "type": "string" },
+        "duration": { "type": "number" },
+        "tip": { "type": "string" }
+      },
+      "required": ["id", "instruction"]
+    },
+    "UserProfile": {
+      "title": "UserProfile",
+      "description": "User profile information.",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string" },
+        "displayName": { "type": "string" },
+        "email": { "type": "string" },
+        "photoURL": { "type": "string" }
+      },
+      "required": ["uid", "displayName", "email"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "UserProfile",
+      "description": "User profile documents."
+    },
+    "/users/{userId}/savedRecipes/{recipeId}": {
+      "schema": "Recipe",
+      "description": "Recipes saved by the user."
+    }
+  }
+}

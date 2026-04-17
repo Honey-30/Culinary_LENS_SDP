@@ -1,0 +1,7 @@
+{
+  "name": "My Google AI Studio App",
+  "description": "An intelligent cooking assistant that uses AI to recognize ingredients from images and generate personalized recipes with guided cooking steps.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
